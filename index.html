@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper Scissor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href=".\assets\favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+        <p>You know how to play...</p>
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones">
+            First to score 5, wins
+        </p>
+        <div class="marcador">
+            <p class="nombre nombre-jugador">Player</p>
+            <p class="nombre nombre-computadora">Computer</p>
+            <p class="puntos">
+                <span id="puntos-usuario">0</span>
+                <span>-</span>
+                <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+        <div class="elegi-tu-arma" id="elegi-tu-arma">
+            <h2>Choose your next weapon</h2>
+            <div class="armas">
+                <button class="arma" id="rock✊">✊</button>
+                <button class="arma" id="paper🤚">🤚</button>
+                <button class="arma" id="scissors✌">✌</button>
+            </div>
+        </div>
+        <div class="mensaje disabled" id="mensaje">
+            <p>
+                You chose <span class="eleccion" id="eleccion-usuario">paper🤚</span><br>
+                and the computer chose <span class="eleccion" id="eleccion-computadora">scissors✌</span>
+            </p>
+            <p id="gana-punto">¡You scored!</p>
+        </div>
+        <button class="btn disabled" id="reiniciar">Restart game</button>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
